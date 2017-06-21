@@ -1,0 +1,572 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>QUICKO</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	<style>
+
+
+/* Popup container - can be anything you want */
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+
+
+
+
+
+
+
+
+
+
+
+        body{
+          font-family:font-family: "Helvetica Neue",Helvetica,sans-serif!important;  
+            
+        }
+        #how_it_works{
+	padding-top:100px;
+            padding-bottom:100px;
+              background: #fff;
+}
+
+#container_flex{
+  
+	display:flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+	
+}
+
+@media screen and ( max-width:1250px ){
+	#container_flex{
+	flex-wrap:wrap;
+	
+}
+    
+}
+        
+        
+        
+@media screen and ( max-width:1000px ){
+
+    #signup_today{
+        flex-wrap:wrap;
+    }
+}
+        
+ 
+            img{
+                margin:0 auto;
+            }
+#block_1{
+    min-width:400px;
+	display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+#block_2{
+    min-width:400px;
+		display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    text-align: center;
+    
+}
+#block_3{
+    min-width:400px;
+    	display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+
+    text-align: center;
+}
+        
+        
+        #signup_today{
+            display:flex;
+              align-content: center;
+    justify-content: center;
+    align-items: center;
+  }      
+        
+        
+.how_signup
+        {
+            
+           min-width:350px;
+    	display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+
+    text-align: center;    
+            
+            
+            
+            
+        }
+        
+        
+      #testimonials{
+        
+          max-width:500px;
+	min-width:400px ;
+	height: 500px;
+  padding: 10px;
+	background: #111;
+	-moz-border-radius:12px;
+	-webkit-border-radius:12px;
+	border-radius:12px;
+}
+#testimonials li{ 
+  display:none;
+    color:aliceblue;
+}
+#testimonials ul{
+  list-style:none;
+}
+
+        .test{
+            width:100%;
+            background: #fff;
+            padding:100px;
+            margin:0;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        #testimonials  a{
+            text-decoration: none !important;
+        }    
+        
+        
+        </style>
+    
+    </head>
+	<body class="landing">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<h1><a href="index.html">QUICKO</a></h1>
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span>Menu</span></a>
+									<div id="menu">
+										<ul>
+											<li><a href="index.html">Home</a></li>
+											<li><a href="#three">WHY QUICKO</a></li>
+											<li><a href="#how_it_works">HOW IT WORKS</a></li>
+											<li><a href="#one">Sign Up</a></li>
+											
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Banner -->
+					<section id="banner">
+						<div class="inner">
+							<h2>QUICKO</h2>
+							<b><p>Carpool across<br />
+							your City .An Initiative by <br />
+							Quicko</b>.</p>
+							<ul class="actions">
+							<div class = "popup" onclick = "myFunction()">
+								 <li><a href = "register.php">  <input style = "background-color: #ff8000;" type = "button" value = "REGISTER HERE" /> </a> </li>
+
+								 </div>
+							</ul>
+						</div>
+						<a href="#three" class="more scrolly">Learn More</a>
+					</section>
+
+				<!-- One -->
+				<!--signup-->
+                  <section id="one" class="wrapper style1 special" style="background:#fff; height: 450px;">
+						<div class="inner" style = "margin-top: -80px;">
+							<header class="major">
+								<h2 style="background:;color:#ff8000;"> sign up now<br />
+                                </h2>
+								<p style="color:#000066;">Be a part of quicko community and <br />
+								save environment,fuel and do your bit.As a driver all you need to sign up is..
+                                </p>
+							</header>
+							 
+                             
+  <div id="signup_today">
+
+     
+             
+             
+            
+            
+             
+             <div class="how_signup">
+                 <img src="images/aadhaar-logo.png" alt="aadhar card" width="120px" height="70px">
+                 <p style="color:#000066;">Aadhar card</p>
+                 </div>
+                 
+                
+           
+            
+             <div class="how_signup">
+                 <img src="images/drivers_license.png" alt="lis" width="100px" height="90px" 
+                      style="margin-top:-5px">
+                 <p style="color:#000066;">Driving license</p>
+                 </div>
+                 
+             
+          <div class="how_signup">
+                 <img src="images/signup-icon.png" alt="signup"  width="90px" height="90px"  >
+                 <p style="color:#000066;">Mail confirmation</p>
+           </div>
+          
+          
+                      </div>
+          
+          
+          
+  
+<li style="list-style-type:none"><a href="#" class="button special">SIGN UP</a></li>
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+						</div>
+					</section>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+ 			
+
+				<!-- Two -->
+                <section id="three" class="wrapper style3 special" style="background:#fff;">
+						<div class="inner" style = "margin-top: -70px; margin-bottom: -130px;">
+							<header class="major" style="color:#5d5d5d">
+								<h2 style="color:#ff8000; margin-top: 50px;">Why quicko</h2>
+								<b><p style="color:#3333ff;">Its The best carpool service provider in Chandigarh</p></b><br/>  <br/> 
+                                <h2 style="color:#ff8000; margin-top: -25px; ">  Our features</h2> <br>
+							</header>
+                    </div>
+                </section>
+                
+					<section id="two" class="wrapper alt style2" >
+						<section class="spotlight" style="background:#fff;color:#7b7b7b;font-family:Helvetica Neue',Helvetica,Verdana;">
+							<div class="image"><img src="images/pic01.jpg" alt="" style = "margin-top: 5px; " /></div><div class="content">
+								<h2 style="background:#fff;color:#ff8000;font-family:Helvetica Neue',Helvetica,Verdana;"> 3 tier security</h2>
+								<p style="background:#fff;color:#3333ff;font-family:Helvetica Neue',Helvetica,Verdana;">To ensure security with saving, quicko introduced a 3 tier plan which requires three essentials from the poolers</p>
+                            <li style="color:#3333ff;">Aadhaar card &  
+                                
+                            </li>
+                            <li style="color:#3333ff;">
+                            Driving license verification
+                            </li>
+                            <li style="color:#3333ff;">Car number (with a photo of the car & the pooler).</li>
+							</div>
+						</section>
+					
+						<section class="spotlight" style="background:#fff;color:#111">
+							<div class="image"><img src="images/pic02.jpg" alt="" /></div><div class="content">
+								<h2 style="background:#fff;color:#ff8000;">Reputation System</h2>
+								<p style = "color : #3333ff;">As carpooling involves both the parties i.e. the pooler and the co-poolers, rating is given from both the ends to each other, once the ride gets over.</p>
+                            <p style = "color: #3333ff;">Overall ratings are based on:</p>
+                            <li style = "color : #3333ff;">Community trust</li>
+                            <li style = "color : #3333ff;">Ratings by fellow poolers </li>
+                             
+                            
+                            </div>
+						</section>
+                        
+                        
+                        
+                        
+                        
+                        <section class="spotlight" style="background:#fff;color:#111">
+							<div class="image"><img src="images/pic03.jpg" alt="" /></div><div class="content">
+								<h2 style="color:#ff8000;">Top poolers of the month</h2>
+								<p style = "color:#3333ff;">Lets celebrate the extent of carpooling & be among the top.Special vouchers for the top poolers of the week.</p>
+							</div>
+						</section>
+					</section>
+                	
+
+				<!-- Three -->
+                 
+                
+                		 <section id="how_it_works" id="it_works" style = "margin-top: -40px; height: 760px;" >
+       <center> <h1 style="background:#fff;color:#ff8000;"> How It Works</h1></center> 
+      
+
+  <center>    <p style="color:#3333ff;"> Need a ride to work or home? Carpool with a friendly driver along the way. Make the RYDE choice today!</p></center> 
+        
+    <div id ="container_flex">
+
+        <div id="block_1" style="color:#a0a0a0;">
+              <span>1. Request a ride</span>
+<span>With just two taps,</span><span> get matched with a friendly driver!</span>
+            <img src="images/how_it_works_1.jpg" class="img-responsive" alt="Cinque Terre" width:260px height:522px >
+            </div>
+          
+            <div id="block_2"  style="color:#a0a0a0;">
+                <span>2. Get matched</span>
+<span>Identify your driver by their photo.</span> <span>Make your way!</span>
+            <img src="images/how_it_works_2.jpg" class="img-responsive" alt="Cinque Terre"width:260px height:522px >
+            </div>
+            <div id="block_3" style="color:#a0a0a0;">
+                <span>3. Review your ride</span>
+<span>Contribute to the cost of the trip.</span><span> Share your experience!</span>
+            <img src="images/how_it_works_3.jpg" class="img-responsive" alt="Cinque Terre"
+                 width:260px height:522px >
+                     </div>
+        
+      
+</div>
+    
+      </section>
+                <!--section -->
+              
+
+                
+                
+                
+                
+                	<!-- Three -->
+            
+                
+					<section id="three" class="wrapper style3 special" style="background:#fff;">
+						<div class="inner" style="color:#111;background:#fff; height: 400px;">
+							<header class="major" >
+								<h2 style="color:#ff8000;">why carpool</h2>
+								<p style="color:#111;background:#fff"></p>
+							</header>
+							<ul class="features" style="color:#111;background:#fff; margin-top: -40px;" >
+								<li class="icon fa fa-money" style="background:#fff; margin-top: -80px;">
+									<h3 style="color:#111;background:#fff; color: #ff8000;">Save money. </h3>
+									<p style = "color:#000066;">Share the costs of driving with other riders.</p>
+								</li>
+								<li class="icon fa-hourglass-half" style="color:#111;background:#fff; margin-top: -80px;">
+									<h3 style="color:#111;background:#fff; color : #ff8000;">Save time</h3>
+									<p style = "color : #000066;">Save time. As a carpool, you can drive in the HOV (high occupancy vehicle) lane</p>
+								</li>
+								<li class="icon fa-check-square-o" style="color:#111;background:#fff; margin-top: -80px;">
+									<h3 style="color:#111;background:#fff; color: #ff8000;">Reduce stress.</h3>
+									<p style="color:#111;background:#fff; color: #000066;"> Read, listen to music, or relax when you're not driving.</p>
+								</li>
+								<li class="icon fa-tree" style="color:#111;background:#fff; margin-top: -80px;">
+									<h3 style="color:#111;background:#fff; color: #ff8000;">Help the environment. ...
+
+                                         </h3>
+									<p style="color:#111;background:#fff; color : #000066;">Prolong the life of your vehicle.It reduces traffic.</p>
+								</li>
+								
+							</ul>
+						</div>
+					</section>
+					
+
+				<!-- CTA -->
+                
+                <div class="test">
+		    <div id="testimonials" >
+        <ul>
+			<li>
+                <div id="1" style="width:100px;height:100px;border-radius:100%;overflow:hidden;margin:20px auto;">
+                <img src="images/pic01.jpg">
+                </div>
+                
+				<blockquote>This has to be the most awesome app I've ever used!..lorem ipsum dolor sit amet.
+                This has to be the most awesome app I've ever used!..lorem ipsum dolor sit amet
+                This has to be the most awesome app I've ever used!..lorem ipsum dolor sit amet</blockquote>
+				 <p class="author">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;John Doe, <a href="#">johndoe.com</a></p>
+			</li>
+			<li>
+                <div id="1" style="width:100px;height:100px;border-radius:100%;overflow:hidden;margin:20px auto;">
+                <img src="images/pic02.jpg">
+                </div>
+				<blockquote>Simply amazing! It solved my problem. I highly recommend it.most awesome app I've ever used!..lorem ipsum dolor sit amet
+                This has to be the most awesome app I've ever used!..lorem ipsum dolor sit amet</blockquote>
+				<p class="author">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;John Smith, <a href="#">johnsmith.com</a></p>
+			</li>
+			<li>
+                <div id="1" style="width:100px;height:100px;border-radius:100%;overflow:hidden;margin:20px auto;">
+                <img src="images/pic03.jpg">
+                </div>
+				<blockquote>A tremendous sr sit ametmost awesome app I've ever used!..lorem ipsum dolor sit amet
+                This has to be the most awesome app I've ever used!..lorem ipsum dolor sit amet</blockquote>
+				<p class="author">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ben Cooper Smith, <a href="#">bencooper.com</a></p>
+			</li>
+        </ul>
+    </div>
+
+                
+     </div>   
+	 
+                
+                
+                
+                
+                
+                
+				<!-- Footer -->
+					<footer id="footer" style="background:#111">
+						<ul class="icons">
+							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+							<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+						</ul>
+						<ul class="copyright">
+							<li style="color:#3399ff;">&copy; 2017</li><li style="color: #ff8000;"><a href="#">quickocars</a></li>
+						</ul>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+        <script>
+        var arr=["images/pic03.jpg",  "images/pic02.jpg","images/pic01.jpg"]  ;
+
+          $(function(){
+              
+
+$(function(){
+	var items = (Math.floor(Math.random() * ($('#testimonials li').length)));
+	$('#testimonials li').hide().eq(items).show();
+	
+  function next(){
+		$('#testimonials li:visible').delay(5000).fadeOut('slow',function(){
+			$(this).appendTo('#testimonials ul');
+			$('#testimonials li:first').fadeIn('slow',next);
+    });
+   }
+  next();
+});
+              
+          })
+	
+
+                   
+        
+        
+        </script>
+
+	</body>
+</html>
